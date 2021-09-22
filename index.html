@@ -8,10 +8,31 @@
 </head>
 <body>
     <header>
-        <img src="./img-2/house.png" alt="">
+        <a href="#hero">
+            <img src="./img-2/house.png" alt="">
+        </a>
     </header>
     <main>
-        <section class="hero">
+        <i id="menu-boton">
+            <img src="./img-2/menu-icon.png" alt="">
+        </i>
+        <div class="menu" id="menu">
+            <ul>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#proyectos">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#sobreMi">Sobre Mi</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <section class="hero" id="hero">
             <div class="mica"></div>
             <div class="text-hero-container">
                 <figure>
@@ -19,11 +40,11 @@
                 </figure>
                 <h2>Front-end Developer</h2>
             </div>
-            <a class="flecha-container">
+            <a class="flecha-container" href="#skills">
                 <img src="./img-2/flecha-abajo.png" alt="flecha-abajo" >
             </a>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h3>SKILLS</h3>
             <div class="skills-container">
                 <div class="devtools"></div>
@@ -35,7 +56,7 @@
                 <div class="sass"></div>
             </div>
         </section>
-        <section class="proyectos">
+        <section class="proyectos" id="proyectos">
             <h3>PROYECTOS</h3>
             <div class="card-projects1">
                 <img src="./img-2/project-figuras.jpg" alt="">
@@ -58,7 +79,7 @@
                 </figure>
             </div>
         </section>
-        <section class="sobreMi">
+        <section class="sobreMi" id="sobreMi">
             <h3>Hello World...</h3>
             <p>Mi nombre es Rodrigo Torres, soy un          <span>web developer</span> viviendo en Tabasco, estoy enfocado en tecnologias <span>Front-end</span> como <span>HTML, CSS, JavaScript y React JS.</span> <br>
             </p>
@@ -69,7 +90,7 @@
                 Ademas tengo conocimientos en algunos otros programas como <span>Figma, Git y Github, Prepos</span> y preprocesadores de CSS como <span>Sass.</span>
             </p>
         </section>
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <h3>Contactame!</h3>
             <div class="contacto-container">
                 <a href="https://www.linkedin.com/in/rodrigo-torres-perez-3701951a3/" target="_blank">
@@ -90,5 +111,6 @@
             <p>Hecho por Rodrigo Torres Perez:) 2021</p>
         </footer>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>

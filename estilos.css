@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     color: black;
@@ -9,6 +12,48 @@ span {
 h3 {
     font-size: 35px;
 }
+i {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 7;
+}
+i img {
+    width: 30px;
+    height: 30px;
+}
+/* _____MENU_____ */
+.menu {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    z-index: 6;
+    right: 1000px;
+    transition: 1s;
+}
+.menu ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 50px 0;
+}
+.menu ul li {
+    margin: 100px 0;
+}
+.menu ul a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 40px;
+}
+.menu.is-active {
+    right: 0;
+}
+
 /* _____HEADER_____ */
 header {
     width: 100%;
@@ -209,6 +254,9 @@ header img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.contacto h3 {
+    text-align: center;
 }
 .contacto a {
     width: 40px;
